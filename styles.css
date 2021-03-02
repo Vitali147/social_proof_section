@@ -1,3 +1,284 @@
+/* Reset predefined styles */
 *{
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Base Styles */
+
+body{
+  background: #fff;
+  overflow-x: hidden;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+h1{
+  color:#502050;
+  font-weight: bold;
+  margin:auto;
+  max-width: 330px;
+}
+p{
+  color:#937b92;
+}
+h5{
+  color:#502050;
+  font-weight: bold;
+}
+h6{
+  color:
+    #ee68a4;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.card{
+  background-color:#502050;
+  border-radius:8px;
+  max-width: 340px;
+}
+.photo{
+  border-radius:50%;
+  float:left;
+  width:40px;
+  margin:40px 23px 15px 30px;
+}
+.name{
+  color:#f7f2f7;
+  padding:45px 0 5px 0;
+}
+.testimonial{
+  color:#f7f2f7;
+  font-size: 12px;
+  font-weight: 400;
+  padding:28px 32px 35px 32px;
+  line-height: 1.8;
+  letter-spacing: -0.3px;
+}
+.bgPatternTopMobile{
+  position:absolute;
+  float:left;
+  margin-top:-80px;
+}
+.bgPatternBottomMobile{
+  position:absolute;
+  margin-top: 900px;
+}
+.bgPatternTopDesktop{
+  position:absolute;
+  display:none
+}
+.bgPatternBottomDesktop{
+  position:fixed;
+  margin-left: 350px;
+  margin-top:175px;
+  display:none
+}
+
+                            /* Mobile Screen Size styles 375px */
+
+#intro{
+  text-align: center;
+  margin:80px 19px 40px 19px;
+}
+.introduction{
+  margin:1rem auto;
+  line-height:1.6;
+  letter-spacing: -0.5px;
+  max-width: 360px;
+}
+#reviewsBlock{
+  align-items: center;
+  margin-left:19px;
+  margin-right:19px;
+}
+.reviewBox{
+  background-color: #f7f2f7;
+  text-align: center;
+  height:5rem;
+  border-radius: 10px;
+  margin:1rem auto;
+  max-width: 450px;
+}
+.star{
+  padding:2px;
+  margin:1rem 0 0.5rem;
+}
+.profileCards{
+  margin-top:3rem;
+  align-items: center;
+}
+.card{
+  margin:1rem auto;
+}
+
+/*  Tablets and Laptop Size */
+@media screen and (min-width:960px){
+  *{
+    box-sizing: border-box;
+  }
+  .bgPatternTopMobile, .bgPatternBottomMobile{
+    display: none;
+  }
+  .bgPatternTopDesktop, .bgPatternBottomDesktop{
+    display:block;
+  }
+  .container{
+    display:flex;
+  }
+  h1{
+    font-size: 48px;
+    max-width: 410px;
+    float: left;
+    margin-left:8rem;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  #intro{
+  /* display:inline; */
+    text-align: left;
+    width:50%;
+   margin:8rem auto 1rem 2rem;
+  }
+  .introduction{
+    max-width: 450px;
+    float: left;
+    margin-left:8rem;
+    letter-spacing: -0.5px;
+  }
+  #reviewsBlock{
+    text-align: left;
+    width:50%;
+    margin-top:8.5rem;
+    margin-bottom:1rem;
+  }
+  .reviewBox{
+    text-align: left;
+    height:54px;
+    float:left;
+    min-width: 450px;
+    margin:0.5rem auto;
+  }
+  .star{
+    display:inline;
+  }
+  .star1{
+    margin-left: 2rem;
+  }
+  .rating{
+    display:flex;
+  margin-left: 11rem;
+  margin-top:-28px;
+  }
+
+  .profileCards{
+    display:flex;
+    justify-content: center;
+    margin-top:6px;
+    margin-left: 12px;
+  }
+  .card{
+    margin:0 15px;
+    max-width: 347px;
+  }
+  .name{
+    font-size: 11px;
+  }
+  h6{
+      font-size: 11px;
+  }
+}
+
+/* Desktop Size */
+
+@media screen and (min-width: 1200px){
+  *{
+    box-sizing: border-box;
+  }
+  .bgPatternTopMobile, .bgPatternBottomMobile{
+    display: none;
+  }
+  .bgPatternTopDesktop, .bgPatternBottomDesktop{
+    display:block;
+  }
+  .container{
+    display:flex;
+  }
+  #intro{
+  /* display:inline; */
+    text-align: left;
+    width:50%;
+   margin:8rem auto 1rem 2rem;
+  }
+  h1{
+    font-size: 48px;
+    max-width: 410px;
+    float: left;
+    margin-left:9rem;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+  .introduction{
+    max-width: 450px;
+    float: left;
+    margin-left:9rem;
+    letter-spacing: -0.5px;
+  }
+
+
+  #reviewsBlock{
+    text-align: left;
+    width:50%;
+    margin-top:8.5rem;
+    margin-bottom:1rem;
+  }
+  .reviewBox{
+    text-align: left;
+    height:54px;
+    float:left;
+    min-width: 450px;
+    margin:0.5rem auto;
+  }
+  .box2{
+  margin-left: 46px;
+  }
+  .box3{
+    margin-left: 92px;
+  }
+  .star{
+    display:inline;
+  }
+  .star1{
+    margin-left: 2rem;
+  }
+  .rating{
+    display:flex;
+  margin-left: 11rem;
+  margin-top:-28px;
+  }
+
+  .profileCards{
+    display:flex;
+    justify-content: center;
+    margin-top:6px;
+    margin-left: 12px;
+  }
+  .card{
+    margin:0 15px;
+    max-width: 347px;
+  }
+  .card2{
+    margin-top:30px;
+  }
+  .card3{
+    margin-top:60px;
+  }
+  .name{
+    font-size: 11px;
+  }
+  h6{
+      font-size: 11px;
+  }
 }
